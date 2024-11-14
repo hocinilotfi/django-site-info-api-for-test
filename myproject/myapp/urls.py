@@ -20,5 +20,5 @@ urlpatterns = [
     path('posts/<int:pk>/', PostDetailView.as_view(), name='post_detail'),
 
     # # Gestion des commentaires
-    # path('posts/<int:pk>/comments/', CommentCreateView.as_view(), name='comment_create'),
+    path('posts/<int:pk>/comments/', CommentCreateView.as_view(), name='comment_create'),
 ]
