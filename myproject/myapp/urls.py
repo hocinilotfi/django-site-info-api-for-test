@@ -12,8 +12,8 @@ urlpatterns = [
     # Authentification et gestion des utilisateurs
     path('register/', UserRegisterView.as_view(), name='register'),
     path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    # path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    # path('me/', UserDetailView.as_view(), name='user_detail'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('me/', UserDetailView.as_view(), name='user_detail'),
 
     # Gestion des posts
     path('posts/', PostListView.as_view(), name='post_list'),
