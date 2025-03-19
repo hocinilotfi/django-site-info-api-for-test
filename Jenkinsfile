@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agendoc any
     triggers { pollSCM('* * * * *') }
     stages {
         stage('Create Network') {
